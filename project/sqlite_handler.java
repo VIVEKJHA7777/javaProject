@@ -12,7 +12,7 @@ public class sqlite_handler{
             Connection conn = DriverManager.getConnection(databasepath);  
             if (conn != null) {  
                 DatabaseMetaData meta = conn.getMetaData();  
-           //     System.out.println("The driver name is " + meta.getDriverName());  
+               System.out.println("The driver name is " + meta.getDriverName());  
              //   System.out.println("A new database has been created.");  
             }  
             return conn;
